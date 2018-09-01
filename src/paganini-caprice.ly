@@ -24,66 +24,66 @@
 \new Staff \relative c'' {
 
   \tempo "Allegro"
-  a8-1\mf r8 a16( c16-3 b16 a16
-  e'8-5) r8 e,16-1( gis16-3 fis16 e16
-  a8) r8 a16-1( c16 b16 a16)
-  e'4-5 e,8-1 r8
+  a8-1\mf r a16( c-3 b a
+  e'8-5) r e,16-1( gis-3 fis e
+  a8) r a16-1( c b a)
+  e'4-5 e,8-1 r
 
   \break
 
-  a8-1 r8 a16( c16-3 b16 a16
-  e'8-5) r8 e16-1( gis16-3 fis16 e16
-  a8) r8 \ottava #1 a16( c16 b16 a16
-  e'4) \ottava #0 r4
+  a8-1 r a16( c-3 b a
+  e'8-5) r e16-1( gis-3 fis e
+  a8) r \ottava #1 a16( c b a
+  e'4) \ottava #0 r
 
   \break
 
   \repeat volta 2 {
 
-    a,8-3\f r8 a16( bes16 a16 g16
-    f8) r8 d16-1( f16-3 e16 d16
-    g8-4) r8 g16-3( a16 g16 f16
-    e8) r8 c16-1( e16-3 d16 c16
+    a,8-3\f r a16( bes a g
+    f8) r d16-1( f-3 e d
+    g8-4) r g16-3( a g f
+    e8) r c16-1( e-3 d c
 
     \break
 
-    f8-4) r8 b,16( d16 c16 b16
-    e8) r8 a,16( c16 b16 a16)
-    r8 <a dis>8 r8 <gis e'>8
-    a4 a'8 r8
+    f8-4) r b,16( d c b
+    e8) r a,16( c b a)
+    r8 <a dis> r <gis e'>
+    a4 a'8 r
   }
 }
 
 \new Staff \relative c' {
 \clef bass
 
-  <a c>4 r4
-  e4 r4
-  <a c>4 r4
-  e4 r4
+  <a c>4 r
+  e r
+  <a c> r
+  e r
 
   \break
 
-  <a c>4 r4
-  e4 r4
-  <a c>4 r4
-  e4 r4
+  <a c> r
+  e r
+  <a c> r
+  e r
 
   \break
 
   \repeat volta 2 {
 
-    a4 r4
-    d4 r4
-    g,4 r4
-    c4 r4
+    a r
+    d r
+    g, r
+    c r
 
     \break
 
-    f,4 r4
-    e4 r4
-    f4 e4
-    <a c>4 r4
+    f, r
+    e r
+    f e
+    <a c> r
   }
 }
 >>
