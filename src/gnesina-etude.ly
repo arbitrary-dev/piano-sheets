@@ -26,6 +26,8 @@
   \tempo "Allegro"
   c8->-2(\f d c4) r2
   c4-.-2 e-.-4 d2---3
+  c8->-2( d c4) r2
+  e,4-.-2 g-. d2-.
 
   \break
 
@@ -37,6 +39,11 @@
   \set fingeringOrientations = #'(down)
   r2 <g->-3>8( a g4)
   r4 c-.-1 <g b>2---4-2
+  r <g->-3>8( a g4)
+  \set fingeringOrientations = #'(up)
+  r c,-.-1
+  \once \override Fingering.staff-padding = #'()
+  <g-4 b-2>2-.
 
   \break
 }
