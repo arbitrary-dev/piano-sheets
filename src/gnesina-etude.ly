@@ -6,10 +6,10 @@
   tagline = "2ch.hk/mus"
 }
 
-#(set! paper-alist (cons '("custom" . (cons (* 176 mm) (* 211 mm))) paper-alist))
+#(set! paper-alist (cons '("custom" . (cons (* 210 mm) (* 290 mm))) paper-alist))
 \paper {
   #(set-paper-size "custom")
-  system-system-spacing.basic-distance = #12
+  system-system-spacing.basic-distance = #14
   indent = 0\cm
 }
 
@@ -17,12 +17,13 @@
 
 down = \set fingeringOrientations = #'(down)
 up = \set fingeringOrientations = #'(up)
+right = \set fingeringOrientations = #'(right)
 pad = \override Fingering.staff-padding = #0
 no-pad = \override Fingering.staff-padding = #'()
 
 \new GrandStaff \with {
   \override StaffGrouper.staff-staff-spacing.padding = #0
-  \override StaffGrouper.staff-staff-spacing.basic-distance = #9
+  \override StaffGrouper.staff-staff-spacing.basic-distance = #11
 } <<
 \time 4/4
 \new Staff \relative c'' {
@@ -54,6 +55,17 @@ no-pad = \override Fingering.staff-padding = #'()
   <b f'>-5( <c e>4) r
   a8-2( g d'4) a8( g c4)
   a8-2( g b g c2-4)
+
+  \break
+
+  \up e8->-2(\f f e4) r2
+  g,8->( a g4) r2
+  r <f-2 a-4>
+  <g-1 c-3>1
+  <b-2 e-5>
+  <g-1 c-3>
+
+  \bar "|."
 }
 
 \new Staff \relative g' {
@@ -87,5 +99,16 @@ no-pad = \override Fingering.staff-padding = #'()
   <a->-1>8( g <d-5>4) <g-.-1> <c,-.-5>
   <f-1>2 e
   d c
+
+  \break
+
+  r <c'-3>8->( d c4)
+  r2 e,8->( f e4)
+  c2 <c-3 d-2>
+  \right <c-3 e-1>1
+  <f-1 g,-5>
+  <c-3 e-1>
+
+  \bar "|."
 }
 >>
