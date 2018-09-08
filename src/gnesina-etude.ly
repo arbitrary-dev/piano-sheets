@@ -76,7 +76,14 @@ no-pad = \override Fingering.staff-padding = #'()
   r4 c-.-1 <g b>2---4-2
   r <g->-3>8( a g4)
   \up \no-pad
-  r c,-.-1 <g-4 b-2>2-.
+  r c,-.-\tweak Y-offset #-1.1 -1 <
+    g
+    -\tweak Y-offset #-1.5
+    -4
+    b
+    -\tweak Y-offset #-1.5
+    -2
+  >2-.
 
   \break
 
@@ -105,9 +112,23 @@ no-pad = \override Fingering.staff-padding = #'()
   r <c'-3>8->( d c4)
   r2 e,8->( f e4)
   c2 <c-3 d-2>
-  \right <c-3 e-1>1
+  \right <
+    c
+    -\tweak extra-offset #'(0 . -0.5)
+    -3
+    e
+    -\tweak extra-offset #'(0 . 0.3)
+    -1
+  >1
   <f-1 g,-5>
-  <c-3 e-1>
+  <
+    c
+    -\tweak extra-offset #'(0 . -0.5)
+    -3
+    e
+    -\tweak extra-offset #'(0 . 0.3)
+    -1
+  >
 
   \bar "|."
 }
