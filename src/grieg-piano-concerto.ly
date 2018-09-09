@@ -27,16 +27,21 @@
   a4.-5\f a16 gis
   e4. e16-5 c
   a8 a16-5 gis e8 e16-5 c
-  \change Staff = "down"
-  \voiceOne
-  a8 a16 gis e8 e16 c
+  \new Voice {
+    \change Staff = "down"
+    \voiceOne
+    a8 a16 gis e8 e16 c
+  }
 
   \break
 
-  a2
-  \change Staff = "up"
-  r8 \tuplet 3/2 { a'16 c e } \voiceTwo r8 \tuplet 3/2 { a16 c e }
-  a2
+  \new Voice {
+    \change Staff = "down"
+    \voiceOne
+    a2
+  }
+  % \change Staff = "up"
+  r8 \tuplet 3/2 { a'16 c e } r8 \tuplet 3/2 { a16 c e }
 }
 
 \new Staff = "down" \relative c {
@@ -45,14 +50,22 @@
   <a c e>2
   <gis b>
   <a c e>4 <gis b>
-  \voiceTwo
-  <a c e>4 <gis b>
+  \new Voice {
+    \voiceTwo
+    <a c e>4 <gis b>
+  }
 
   \break
 
-  <c, a>2
-  \voiceOne
-  \tuplet 3/2 { a'16 c e } r8 \voiceTwo \tuplet 3/2 { a16 c e } r8
-  r2
+  \new Voice {
+    \voiceTwo
+    <c, a>2
+  }
+  \tuplet 3/2 { a'16 c e } r8 \tuplet 3/2 { a16 c e } r8
+  \new Voice {
+    \change Staff = "up"
+    \voiceTwo
+    a'2
+  }
 }
 >>
