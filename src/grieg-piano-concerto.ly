@@ -30,7 +30,8 @@
   \new Voice {
     \change Staff = "down"
     \voiceOne
-    a8 a16 gis e8 e16 c
+    \once \override TextScript.extra-offset = #'(-1 . -4.3)
+    a8^\markup { \combine \path #0.1 #'((moveto 0.5 0) (lineto 0.5 -5) (lineto 1.5 -5)) \tiny "r. hand" } a16 gis e8 e16 c
   }
 
   \break
