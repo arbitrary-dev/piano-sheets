@@ -40,8 +40,16 @@
     \voiceOne
     a2
   }
-  % \change Staff = "up"
   r8 \tuplet 3/2 { a'16 c e } r8 \tuplet 3/2 { a16 c e }
+
+  \new Voice {
+    \change Staff = "down"
+    r2
+  }
+
+  \bar "||"
+
+  r8\mf <a,, d> <d f>4
 }
 
 \new Staff = "down" \relative c {
@@ -67,5 +75,9 @@
     \voiceTwo
     a'2
   }
+
+  \bar "||"
+
+  f,,,
 }
 >>
