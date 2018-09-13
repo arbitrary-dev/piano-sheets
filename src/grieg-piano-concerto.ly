@@ -50,7 +50,7 @@
 
   \bar "||"
 
-  r8\mf <a,, d> <d f>4
+  r8\mp <a,, d> <d f>4
 }
 
 \new Staff = "down" \relative c {
