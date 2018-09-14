@@ -51,6 +51,17 @@
   \bar "||"
 
   r8\mp <a,, d> <d f>4
+
+  \break
+
+  r8 <b gis> <e b>4
+  \time 4/4
+  \numericTimeSignature
+  \ottava #1
+  e'-1 f8. g16 f8 e4.-1
+  e8.-1 f16 f8 g e2-1
+
+  \break
 }
 
 \new Staff = "down" \relative c {
@@ -88,5 +99,16 @@
   \bar "||"
 
   f,,,
+
+  \break
+
+  gis
+  \clef treble
+  \time 4/4
+  \numericTimeSignature
+  <a' c e>1
+  <a c e>
+
+  \break
 }
 >>
