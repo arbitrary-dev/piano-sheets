@@ -54,11 +54,11 @@
 
   \break
 
-  r8 <b gis> <e b>4
+  r8 <b gis'> <e b'>4
   \time 4/4
   \numericTimeSignature
   \ottava #1
-  e'-1 f8. g16 f8 e4.-1
+  e'-1\p f8. g16 f8 e4.-1
   e8.-1 f16 f8 g e2-1
 
   \break
