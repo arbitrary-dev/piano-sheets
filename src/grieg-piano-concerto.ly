@@ -88,9 +88,8 @@
     \once \override TextScript.extra-offset = #'(-1.7 . 6.5)
     a'2_\markup { \combine \path #0.1 #'((moveto 0.7 1.3) (lineto 0.7 8.3) (lineto 1.7 8.3)) \tiny "l. hand" }
 
-    % FIXME
-    % \override RehearsalMark.direction = #DOWN
-    \mark \markup { \italic "End" }
+    \once \override Score.RehearsalMark.direction = #DOWN
+    \mark \markup { \italic \normalsize "End" }
   }
 
   % TODO
