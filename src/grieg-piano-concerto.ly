@@ -62,6 +62,14 @@
   e8.-1 f16 f8 g e2-1
 
   \break
+
+  g4-1 a8. b16 a8 g4.-1
+  g8.-1 a16 a8 b8 g2-1
+  \ottava #0
+  e,4-1\< f-2 b2-3\!
+
+  \break
+
 }
 
 \new Staff = "down" \relative c {
@@ -109,5 +117,13 @@
   <a c e>
 
   \break
+
+  <c e g>
+  <c e g>
+  \clef bass
+  \tuplet 3/2 { e,8 gis b } \tuplet 3/2 { d, f a } \tuplet 3/2 { b, d f } r4
+
+  \break
+
 }
 >>
