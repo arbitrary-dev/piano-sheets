@@ -66,10 +66,15 @@
   g4-1 a8. b16 a8 g4.-1
   g8.-1 a16 a8 b8 g2-1
   \ottava #0
-  e,4-1\< f-2 b2-3\!
+  e,4-1\< f-2 b2-5\!
 
   \break
 
+  a4-1 bes e2-5
+  f4-5\f e \tuplet 3/2 { a,8-1 b c } b d
+  gis,4.-2 a8-1 c4 b
+
+  \bar ":|."
 }
 
 \new Staff = "down" \relative c {
@@ -96,7 +101,7 @@
     \once \override TextScript.extra-offset = #'(-1.7 . 6.5)
     a'2_\markup { \combine \path #0.1 #'((moveto 0.7 1.3) (lineto 0.7 8.3) (lineto 1.7 8.3)) \tiny "l. hand" }
 
-    \once \override Score.RehearsalMark.direction = #DOWN
+    \override Score.RehearsalMark.direction = #DOWN
     \mark \markup { \italic \normalsize "End" }
   }
 
@@ -125,5 +130,11 @@
 
   \break
 
+  \tuplet 3/2 { a,8 cis e } \tuplet 3/2 { g, bes e } \tuplet 3/2 { a, cis e } r4
+  <d f a>1
+  <dis fis a>2 <e a c>4 <e gis b>
+
+  \mark \markup { \translate-scaled #'(-10 . 0) \italic \normalsize "Repeat 'till \"End\"" }
+  \bar ":|."
 }
 >>
