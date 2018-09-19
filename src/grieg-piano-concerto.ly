@@ -10,7 +10,7 @@
 % #(set! paper-alist (cons '("custom" . (cons (* 176 mm) (* 211 mm))) paper-alist))
 \paper {
   #(set-paper-size "a4")
-  system-system-spacing.basic-distance = #12
+  system-system-spacing.basic-distance = #13
   indent = 0\cm
 }
 
@@ -18,10 +18,13 @@
 
 \new GrandStaff \with {
   \override StaffGrouper.staff-staff-spacing.padding = #0
-  \override StaffGrouper.staff-staff-spacing.basic-distance = #9
+  \override StaffGrouper.staff-staff-spacing.basic-distance = #11
 } <<
 \time 2/4
 \new Staff = "up" \relative c''' {
+
+  \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+    #'((alignment-distances . (11)))
 
   \tempo "Allegro"
   a4.-5\f a16 gis
@@ -35,6 +38,9 @@
   }
 
   \break
+
+  \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+    #'((alignment-distances . (11)))
 
   \new Voice {
     \change Staff = "down"
