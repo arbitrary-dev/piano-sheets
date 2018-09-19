@@ -19,6 +19,7 @@
 \new GrandStaff \with {
   \override StaffGrouper.staff-staff-spacing.padding = #0
   \override StaffGrouper.staff-staff-spacing.basic-distance = #11
+  \override DynamicLineSpanner.staff-padding = #3
 } <<
 \time 2/4
 \new Staff = "up" \relative c''' {
