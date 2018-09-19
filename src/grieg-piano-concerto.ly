@@ -137,7 +137,9 @@
   <d f a>1
   <dis fis a>2 <e a c>4 <e gis b>
 
-  \mark \markup { \translate-scaled #'(-10 . 0) \italic \normalsize "Repeat 'till \"End\"" }
+  \once \override Score.RehearsalMark #'self-alignment-X = #RIGHT
+  \tweak extra-offset #'(0 . -1)
+  \mark \markup { \italic \normalsize "Repeat 'till \"End\"" }
   \bar ":|."
 }
 >>
