@@ -1,7 +1,7 @@
 \version "2.19.80"
 
 \header {
-  title = "LA PEREGRINACION"
+  title = "LA PEREGRINACIÓN"
   composer = "Ariel Ramírez"
   tagline = "2ch.hk/mus"
 }

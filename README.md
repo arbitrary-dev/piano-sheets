@@ -15,4 +15,4 @@ that can't install LilyPond and compile from sources themselves:
 - [Niccolò Paganini – Caprice](https://github.com/arbitrary-dev/piano-sheets/releases/download/pdfs/paganini-caprice.pdf)
 - [Elena Gnesina – Etude](https://github.com/arbitrary-dev/piano-sheets/releases/download/pdfs/gnesina-etude.pdf)
 - [Edvard Grieg – Piano Concerto](https://github.com/arbitrary-dev/piano-sheets/releases/download/pdfs/grieg-piano-concerto.pdf)
-- [Ariel Ramírez – La Peregrinacion](https://github.com/arbitrary-dev/piano-sheets/releases/download/pdfs/ramirez-peregrinacion.pdf)
+- [Ariel Ramírez – La Peregrinación](https://github.com/arbitrary-dev/piano-sheets/releases/download/pdfs/ramirez-peregrinacion.pdf)
