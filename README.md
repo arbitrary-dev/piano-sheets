@@ -17,3 +17,4 @@ that can't install LilyPond and compile from sources themselves:
 - [Edvard Grieg – Piano Concerto](https://github.com/arbitrary-dev/piano-sheets/releases/download/pdfs/grieg-piano-concerto.pdf)
 - [Ariel Ramírez – La Peregrinación](https://github.com/arbitrary-dev/piano-sheets/releases/download/pdfs/ramirez-peregrinacion.pdf)
 - [Gioachino Rossini – William Tell Overture](https://github.com/arbitrary-dev/piano-sheets/releases/download/pdfs/rossini-william-tell.pdf)
+- [Jean Louis Gobbaerts – Distant Bells](https://github.com/arbitrary-dev/piano-sheets/releases/download/pdfs/gobbaerts-distant-bells.pdf)
