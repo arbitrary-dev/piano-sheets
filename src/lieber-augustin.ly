@@ -33,10 +33,15 @@ up = \set fingeringOrientations = #'(up)
 
   \break
 
-  g'4.
+  g'4.-4( a8 g f
+  e4 c) c
+  d-4( g,) g
+  c-3 r r
 
   \bar ":|."
   \break
+
+
 }
 
 \new Staff \relative c' {
@@ -49,9 +54,14 @@ up = \set fingeringOrientations = #'(up)
 
   \break
 
-  c
+  <c-4> <e g> <e g>
+  c <e g> <e g>
+  g, <d' f> <d f>
+  <c-3 e-1> r r
 
   \bar ":|."
   \break
+
+
 }
 >>
