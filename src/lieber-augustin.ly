@@ -40,8 +40,21 @@ up = \set fingeringOrientations = #'(up)
 
   \bar ":|."
   \break
+  \bar ".|:"
 
+  d-4( g,) g
+  e'-5( c-3) c
+  d-4( g,) g
+  e'-5( c-3) c-1
 
+  \break
+
+  g'4.-4( a8 g f
+  e4-2 c-1) c-3
+  d-4( g,) g
+  c r r
+
+  \bar ":|."
 }
 
 \new Staff \relative c' {
@@ -61,7 +74,20 @@ up = \set fingeringOrientations = #'(up)
 
   \bar ":|."
   \break
+  \bar ".|:"
 
+  g <d' f> <d f>
+  <c-4> <e g> <e g>
+  g, <d' f> <d f>
+  <c-4> <e g> <e g>
 
+  \break
+
+  c <e g> <e g>
+  c <e g> <e g>
+  g, <d' f> <d f>
+  <c-3 e-1> r r
+
+  \bar ":|."
 }
 >>
