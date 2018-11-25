@@ -18,40 +18,42 @@
 down = \set fingeringOrientations = #'(down)
 up = \set fingeringOrientations = #'(up)
 
+\markup { \vspace #1.5 }
+
 \new GrandStaff \with {
   \override StaffGrouper.staff-staff-spacing.padding = #0
-  \override StaffGrouper.staff-staff-spacing.basic-distance = #12
+  \override StaffGrouper.staff-staff-spacing.basic-distance = #11
 } <<
 \time 3/4
 \new Staff \relative c''' {
 \numericTimeSignature
 
-  g4.-4( a8 g f
+  g4.-4-\shape #'((0 . 0) (2 . 1) (-1 . 2) (0 . 0)) ( a8 g f
   e4-2 c-1) c
-  d-4( g,) g
+  d-4-\shape #'((0 . 0) (0 . 0.3) (0 . 1) (0 . 0)) ( g,) g
   e'-5( c-3) c-1
 
   \break
 
-  g'4.-4( a8 g f
+  g'4.-4-\shape #'((0 . 0) (2 . 1) (-1 . 2) (0 . 0)) ( a8 g f
   e4 c) c
-  d-4( g,) g
+  d-4-\shape #'((0 . 0) (0 . 0.3) (0 . 1) (0 . 0)) ( g,) g
   c-3 r r
 
   \bar ":|."
   \break
   \bar ".|:"
 
-  d-4( g,) g
+  d-4-\shape #'((0 . 0) (0 . 0.3) (0 . 1) (0 . 0)) ( g,) g
   e'-5( c-3) c
-  d-4( g,) g
+  d-4-\shape #'((0 . 0) (0 . 0.3) (0 . 1) (0 . 0)) ( g,) g
   e'-5( c-3) c-1
 
   \break
 
-  g'4.-4( a8 g f
+  g'4.-4-\shape #'((0 . 0) (2 . 1) (-1 . 2) (0 . 0)) ( a8 g f
   e4-2 c-1) c-3
-  d-4( g,) g
+  d-4-\shape #'((0 . 0) (0 . 0.3) (0 . 1) (0 . 0)) ( g,) g
   c r r
 
   \bar ":|."
