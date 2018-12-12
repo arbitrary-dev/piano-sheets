@@ -56,7 +56,28 @@ boff = \autoBeamOff
 
   \break
 
+  d2. e8 c
+  a1(
+  a8) r a'4 b4. g8
+  f1(
 
+  \break
+
+  f4) g a4. b8
+  e,1(
+  e4) f g4. c,8
+  d1(
+
+  \break
+
+  d4) e f4. b8
+  e,1(
+  e8) r a4 b4. g8
+  f1(
+
+  \break
+
+  f4)
 
   \bar "|."
 }
@@ -90,6 +111,27 @@ boff = \autoBeamOff
   g,,8\son f' b f e' f, d' f,
   g, f' b f e' f, d' f,\soff
   c\son g' c g e' g, c g\soff
+
+  \break
+
+  e\son gis d' gis, e' gis, d' gis,\soff
+  a,\son e' b' e, c' e, d' e,
+  e' r\soff r4 r2
+  d,8\son a' e' a, f' a, g' a,
+
+  \break
+
+  d, a' e' a, f' a, g' a,\soff
+  a,\son e' b' e, c' e, d' e,
+  a, e' b' e, c' e, d' e,\soff
+  d\son a' e' a, f' a, g' a,
+
+  \break
+
+  d, a' e' a, f' a, g' a,\soff
+  a,\son e' b' e, c' e, d' e,
+  e' r r4 r2\soff
+  d,8\son a' e' a, f' a, g' a,
 
   \break
 
