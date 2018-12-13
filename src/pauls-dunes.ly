@@ -1,16 +1,16 @@
 \version "2.19.80"
 
 \header {
-  title = "Long Road in Dunes"
-  composer = "Raimond Pauls"
+  title = "Ilgais ceļš kāpās"
+  composer = "Raimonds Pauls"
   tagline = "2ch.hk/mus"
 }
 
-#(set! paper-alist (cons '("custom" . (cons (* 210 mm) (* 290 mm))) paper-alist))
 \paper {
-  #(set-paper-size "custom")
-  system-system-spacing.basic-distance = #14
+  #(set-paper-size "a4")
+  system-system-spacing.basic-distance = #18
   indent = 0\cm
+  print-page-number = #f
 }
 
 son = \sustainOn
@@ -20,9 +20,11 @@ boff = \autoBeamOff
 
 #(set-global-staff-size 23)
 
+\markup { \vspace #1.5 }
+
 \new GrandStaff \with {
   \override StaffGrouper.staff-staff-spacing.padding = #0
-  \override StaffGrouper.staff-staff-spacing.basic-distance = #11
+  \override StaffGrouper.staff-staff-spacing.basic-distance = #12
 } <<
 \time 4/4
 \new Staff \relative e' {
@@ -77,7 +79,16 @@ boff = \autoBeamOff
 
   \break
 
-  f4)
+  f4) g a4. b8
+  e,1(
+  e4) f g4. c,8
+
+  \break
+
+  d1(
+  d4) e a,4. a8
+  a1(
+  a4) r r2
 
   \bar "|."
 }
@@ -135,7 +146,16 @@ boff = \autoBeamOff
 
   \break
 
+  d, a' e' a, f' a, g' a,\soff
+  a,\son e' b' e, c' e, d' e,
+  a, e' b' e, c' e, d' e,\soff
 
+  \break
+
+  d\son a' e' a, f' a, g' a,
+  d, a' e' a, f' a, g' a,\soff
+  a,\son e' b' e, c' e, d' e,
+  a,4 r4 r2\soff
 
   \bar "|."
 }
