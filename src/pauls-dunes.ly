@@ -22,72 +22,89 @@ boff = \autoBeamOff
 
 \markup { \vspace #1.5 }
 
+h =
+#(define-music-function
+ (parser location value)
+ (pair?)
+  #{
+    \once \override Hairpin.shorten-pair = #value
+  #})
+
 \new GrandStaff \with {
   \override StaffGrouper.staff-staff-spacing.padding = #0
   \override StaffGrouper.staff-staff-spacing.basic-distance = #12
+  % \override DynamicLineSpanner.staff-padding = #3
+  % \override TextScript.staff-padding = #1
+  \override Hairpin.to-barline = ##f
 } <<
 \time 4/4
 \new Staff \relative e' {
 \numericTimeSignature
 
-  r8\boff e8\bon b' a d4. c8
-  e1
-  r8\boff e,8\bon b' a d4. c8
-  f1
+  <<
+    { b'8\rest\mp\boff e,8(\bon b' a \stemDown \h #'(0 . 2) d4.\< c8 \stemNeutral
+      e1\!)
+      b8\rest\boff e,8(\bon b' \h #'(0 . 2) a\< d4. c8
+      f1\!) } \\
+    { \hideNotes s1
+      s2 s8 s4.\>
+      s8 b8\rest\! s2.
+      s1 }
+  >>
 
   \break
 
-  r8\boff a,\bon e' d g4. f8
-  gis4. a8 b4. a8
-  gis4. a8 b f4 e16 d
-  c1
+  r8\boff a,(\bon e' d g4. f8
+  gis4.) a8( b4. a8
+  gis4.) a8( b f4 e16 d
+  c1)
 
   \break
 
-  r8\boff e,\bon b' a d4. c8
-  e1
-  r8\boff e,\bon b' a d4. c8
-  f1
+  r8\boff e,(\bon b' a d4. c8
+  e1)
+  r8\boff e,(\bon b' a d4. c8
+  f1)
 
   \break
 
-  r8\boff d\bon e f g4. a8
-  a g g2.
-  r8\boff d\bon a' g g d4 e16 f
-  e2. f8 e
+  r8\boff d(\bon e f g4. a8
+  a g g2.)
+  r8\boff d(\bon a' g g d4 e16 f
+  e2.) f8 e
 
   \break
 
   d2. e8 c
   a1(
-  a8) r a'4 b4. g8
-  f1(
+  a8) r a'4(\mf b4. g8
+  f1)(
 
   \break
 
-  f4) g a4. b8
-  e,1(
-  e4) f g4. c,8
-  d1(
+  f4) g( a4. b8
+  e,1)(
+  e4) f( g4. c,8
+  d1)(
 
   \break
 
-  d4) e f4. b8
-  e,1(
-  e8) r a4 b4. g8
-  f1(
+  d4) e( f4. b8
+  e,1)(
+  e8) r a4( b4. g8
+  f1)(
 
   \break
 
-  f4) g a4. b8
-  e,1(
-  e4) f g4. c,8
+  f4) g( a4. b8
+  e,1)(
+  e4) f( g4. c,8
 
   \break
 
-  d1(
-  d4) e a,4. a8
-  a1(
+  d1)(
+  d4) e( a,4. a8
+  a1)(
   a4) r r2
 
   \bar "|."
@@ -97,7 +114,7 @@ boff = \autoBeamOff
 \numericTimeSignature
 \clef bass
 
-  r1
+  r1_\markup { \large \italic legato }
   a8\son e' b' e, c' e,4 d'8
   e r r4\soff r2
   d,8\son a' e' a, f' a,4 g'8
