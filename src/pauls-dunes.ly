@@ -41,42 +41,36 @@ h =
 \new Staff \relative e' {
 \numericTimeSignature
 
-  <<
-    { b'8\rest\mp\boff e,8(\bon b' a \stemDown \h #'(0 . 2) d4.\< c8 \stemNeutral
-      e1\!)
-      b8\rest\boff e,8(\bon b' \h #'(0 . 2) a\< d4. c8
-      f1\!) } \\
-    { \hideNotes s1
-      s2 s8 s4.\>
-      s8 b8\rest\! s2.
-      s1 }
-  >>
+  r8\boff e8(\bon b' \h #'(0 . 2) a\< d4. c8
+  e1)\! \h #'(-8.5 . 0)
+  r8\>\boff e,8(\!\bon b' \h #'(0 . 2) a\< d4. c8
+  f1)\!
 
   \break
 
-  r8\boff a,(\bon e' d g4. f8
-  gis4.) a8( b4. a8
-  gis4.) a8( b f4 e16 d
-  c1)
+  r8\boff a,(\bon \h #'(0 . 2) e'\< d g4. f8
+  gis4.)\! a8( b4. a8
+  gis4.) a8( \h #'(0 . 1) b\> f4 e16 d
+  c1)\!
 
   \break
 
-  r8\boff e,(\bon b' a d4. c8
-  e1)
-  r8\boff e,(\bon b' a d4. c8
-  f1)
+  r8\boff e,8(\bon b' \h #'(0 . 2) a\< d4. c8
+  e1)\! \h #'(-8.5 . 0)
+  r8\>\boff e,8(\!\bon b' \h #'(0 . 2) a\< d4. c8
+  f1)\!
 
   \break
 
-  r8\boff d(\bon e f g4. a8
-  a g g2.)
-  r8\boff d(\bon a' g g d4 e16 f
-  e2.) f8 e
+  r8\boff d(\<\bon e f g4. a8
+  a g\! g2.)
+  r8\boff d(\bon a'\> g g d4 e16 f
+  e2.)\! f8 e
 
   \break
 
-  d2. e8 c
-  a1(
+  d2. \h #'(-6 . -4) e8\> c
+  a1(\!
   a8) r a'4(\mf b4. g8
   f1)(
 
