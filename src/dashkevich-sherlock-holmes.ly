@@ -49,6 +49,11 @@ h =
   \break
 
   <c f a>1
+  <a c f>4.. <a c f>16 <c f a>4 <f a c>
+  \ottava #1
+  <d' a'>16 g f g a4 r8 <a, e' g>4 <a d f>8
+  e'16 f g f e8-. g-. e-. g-. d-. f-.
+  \ottava #0
 
   % TODO
 }
@@ -64,6 +69,9 @@ h =
   \break
 
   <c f a>1
+  <a c f>4.. <a c f>16 <c f a>4 <f a c>
+  << { f'16 e d e f4 } \\ { a,2 } >> r8 <a e' g>4 <a d f>8
+  << { c16 d e d c8-. e-. } \\ { g,2 } >> <g c>8-. e'-. <g, b>-. d'-.
 
   % TODO
 }
